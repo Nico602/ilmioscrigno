@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il Mio Scrigno — Assistenza</title>
+<meta name="description" content="Pagina di assistenza dell'app Il Mio Scrigno: come funziona, domande frequenti e come contattare lo sviluppatore.">
+<style>
+  :root {
+    --sfondo: #f7f5f1;
+    --carta: #ffffff;
+    --testo: #1c1a18;
+    --tenue: #5f5a54;
+    --oro: #a86f08;
+    --bordo: #e6e1d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --sfondo: #16140f;
+      --carta: #201d17;
+      --testo: #f2efe9;
+      --tenue: #a9a299;
+      --oro: #e0a93a;
+      --bordo: #302b22;
+    }
+  }
+  :root[data-theme="dark"] {
+    --sfondo: #16140f; --carta: #201d17; --testo: #f2efe9;
+    --tenue: #a9a299; --oro: #e0a93a; --bordo: #302b22;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--sfondo);
+    color: var(--testo);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .foglio { max-width: 680px; margin: 0 auto; padding: 56px 16px 80px; }
+
+  header { text-align: center; margin-bottom: 48px; }
+  h1 { font-size: 2.1rem; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .sottotitolo { color: var(--tenue); margin: 0; }
+
+  section {
+    background: var(--carta);
+    border: 1px solid var(--bordo);
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin-bottom: 20px;
+  }
+  h2 { font-size: 1.12rem; margin: 0 0 12px; }
+  p { margin: 0 0 14px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+
+  a { color: var(--oro); }
+  a:hover { text-decoration: none; }
+
+  .domanda { font-weight: 600; margin-bottom: 4px; }
+  .risposta { color: var(--tenue); margin-bottom: 20px; }
+  .risposta:last-child { margin-bottom: 0; }
+
+  .contatto {
+    display: inline-block;
+    background: var(--oro);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 13px 26px;
+    border-radius: 999px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .contatto { color: #16140f; }
+  }
+
+  footer {
+    text-align: center;
+    color: var(--tenue);
+    font-size: 0.86rem;
+    margin-top: 40px;
+  }
+  footer a { color: var(--tenue); }
+</style>
+</head>
+<body>
+<div class="foglio">
+
+  <header>
+    <h1>Il Mio Scrigno</h1>
+    <p class="sottotitolo">Assistenza e informazioni</p>
+  </header>
+
+  <section>
+    <h2>Che cos'è</h2>
+    <p>
+      Il Mio Scrigno raccoglie in un posto solo i libretti di risparmio e i conti
+      intestati ai bambini di casa, e rende semplice per nonni, zii e padrini
+      fare un regalo in denaro: l'IBAN si copia con un tocco, oppure si inquadra
+      un codice QR con l'app della propria banca.
+    </p>
+    <p>
+      L'app <strong>non si collega alle banche e non sposta denaro</strong>.
+      Mostra i dati che hai inserito tu e prepara il codice QR; il bonifico si
+      esegue sempre dall'app della propria banca.
+    </p>
+  </section>
+
+  <section>
+    <h2>Domande frequenti</h2>
+
+    <p class="domanda">I saldi si aggiornano da soli?</p>
+    <p class="risposta">
+      No. Le banche non espongono i saldi a un'app esterna senza un servizio di
+      open banking autorizzato, che Il Mio Scrigno non usa. I saldi li aggiorni
+      tu quando vuoi, dalla modalità genitore.
+    </p>
+
+    <p class="domanda">Dove finiscono i miei dati?</p>
+    <p class="risposta">
+      Restano su questo iPhone, in un file protetto dalla cifratura del sistema
+      quando il telefono è bloccato. Non c'è nessun account da creare, nessun
+      server, nessuna pubblicità e nessun tracciamento.
+    </p>
+
+    <p class="domanda">Se cambio telefono o lo perdo?</p>
+    <p class="risposta">
+      I dati sono salvati solo sul dispositivo e rientrano nel backup di iCloud
+      o del computer, se lo hai attivo. Senza backup, cambiando telefono i
+      libretti vanno reinseriti. Gli IBAN restano comunque nei documenti della
+      banca.
+    </p>
+
+    <p class="domanda">La mia banca non legge il codice QR.</p>
+    <p class="risposta">
+      Il codice segue lo standard europeo EPC069-12, ma non tutte le banche
+      italiane lo supportano. In quel caso usa il pulsante "Copia IBAN" e
+      incolla il numero nel bonifico.
+    </p>
+
+    <p class="domanda">A cosa servono i due codici?</p>
+    <p class="risposta">
+      Il primo lo condividi con chi vuoi che veda i libretti e possa fare un
+      regalo. Il secondo lo tieni per te: serve ad aggiungere libretti e
+      aggiornare i saldi. Si possono cambiare dalle impostazioni.
+    </p>
+
+    <p class="domanda">Ho inserito un IBAN e l'app dice che non è valido.</p>
+    <p class="risposta">
+      Ogni IBAN contiene due cifre di controllo che devono tornare con il resto
+      del numero. Se l'app segnala un errore, c'è quasi sempre una cifra
+      sbagliata: confrontalo con il documento della banca.
+    </p>
+  </section>
+
+  <section>
+    <h2>Scrivimi</h2>
+    <p>
+      Per segnalazioni, problemi o suggerimenti, scrivi a questo indirizzo.
+      Rispondo di solito entro pochi giorni.
+    </p>
+    <p>
+      <a class="contatto" href="mailto:nico.pasinelli@gmail.com?subject=Il%20Mio%20Scrigno%20-%20assistenza">
+        nico.pasinelli@gmail.com
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      <a href="https://www.iubenda.com/privacy-policy/23806326">Informativa sulla privacy</a>
+    </p>
+    <p>Il Mio Scrigno — sviluppata da Nicola Pasinelli</p>
+  </footer>
+
+</div>
+</body>
+</html>
